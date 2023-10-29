@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <title>BAR CODE</title>
+
+      <style>
+         @font-face {
+            font-family: "gotham-black";
+            src: url("./assets/fonts/GothamPro-Black.eot"),
+               url("./assets/fonts/GothamPro-Black.woff"),
+               url("./assets/fonts/GothamPro-Black.ttf");
+         }
+
+         @font-face {
+            font-family: "MicrosoftNewTaiLue-Bold";
+            src: url("./assets/fonts/ntailub.eot"); 
+            src: url("./assets/fonts/ntailub.eot?#iefix") format("embedded-opentype"),
+               url("./assets/fonts/ntailub.otf") format("opentype"), 
+               url("./assets/fonts/ntailub.svg") format("svg"), 
+               url("./assets/fonts/ntailub.ttf") format("truetype"),
+               url("./assets/fonts/ntailub.woff") format("woff"), 
+               url("./assets/fonts/ntailub.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+         }
+
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+         }
+         body {
+            font-family: "MicrosoftNewTaiLue-Bold";
+         }
+         h2 {
+            font-family: "gotham-black";
+         }
+
+         .main {
+            width: 1800px;
+            height: 1200px;
+            margin: 0 auto;
+         }
+         .code-container {
+            position: relative;
+            z-index: 1;
+            padding: 8px;
+            width: 50%;
+            float: left;
+            height: 100%;
+         }
+         .code-scn-img {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translate(0, -50%);
+            padding: 70px 0px;
+            border: 5px solid #000;
+            padding-right: 5px;
+            z-index: 2;
+            background: #fff;
+            text-align: center;
+         }
+         .code-item {
+            border: 5px solid #020202;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            height: 100%;
+         }
+         .code-content h2 {
+            font-size: 86px;
+            color: #010101;
+            border-top: 5px solid #000000;
+            border-bottom: 5px solid #000000;
+            padding: 15px 0;
+         }
+         .code-content ul li {
+            font-size: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 5px solid;
+            color: #000;
+            padding: 8px 20px;
+         }
+         .code-content ul li span:last-child {
+            font-size: 60px;
+         }
+         .code-content ul li span:first-child:after {
+            content: ":";
+            position: absolute;
+            left: 265px;
+         }
+         .code-content ul li span {
+            position: relative;
+         }
+         .code-content p {
+            font-size: 52px;
+            line-height: 1.11;
+            border-top: 5px solid;
+            border-bottom: 5px solid;
+            margin-bottom: 10px;
+            padding: 15px;
+         }
+         .code-content img {
+            padding: 40px 0;
+         }
+         .logo {
+            display: block;
+            padding-bottom: 30px;
+         }
+
+         .code-item {
+            padding-right: 285px;
+         }
+
+         @media (max-width: 1200px) {
+            .main {
+               width: auto;
+               height: auto;
+            }
+            .code-container {
+               width: 100%;
+               float: none;
+               margin-bottom: 30px;
+            }
+            .logo {
+               padding: 20px 0;
+            }
+            .logo img {
+               max-width: 200px;
+               margin: 0 auto;
+            }
+            .code-item {
+               padding-right: 0;
+            }
+            .code-scn-img {
+               position: relative;
+               right: 0;
+               top: 0;
+               transform: none;
+            }
+            .code-content h2 {
+               font-size: 45px;
+            }
+            .code-content ul li {
+               font-size: 35px;
+            }
+            .code-content ul li span:last-child {
+               font-size: 30px;
+               padding: 10px 20px;
+            }
+            .code-content ul li span:first-child::after {
+               left: 155px;
+            }
+            .code-content p {
+               font-size: 32px;
+            }
+         }
+      </style>
+
+   </head>
+
+   <body>
+      <div class="main">
+         <div class="code-container">
+            <div class="code-item">
+               <a href="index.html" class="logo"
+                  ><img src="./assets/img/logo.png" alt="logo"
+               /></a>
+               <div class="code-content">
+                  <h2>BOTTLE</h2>
+                  <ul>
+                     <li>
+                        <span>SIZE</span>
+                        <span>1QT</span>
+                     </li>
+                     <li>
+                        <span>COLOR</span>
+                        <span>BLACK</span>
+                     </li>
+                  </ul>
+                  <img
+                     src="./assets/img/small-yellow-bottle.png"
+                     alt="bottle"
+                  />
+                  <p>861 S. Great Southwest Pkwy, Grand PrairieTX,75051</p>
+               </div>
+            </div>
+
+            <div class="code-scn-img">
+               <img src="./assets/img/code.png" alt="scn" />
+            </div>
+         </div>
+
+         <div class="code-container">
+            <div class="code-item">
+               <a href="index.html" class="logo"
+                  ><img src="./assets/img/logo.png" alt="logo"
+               /></a>
+               <div class="code-content">
+                  <h2>BOTTLE</h2>
+                  <ul>
+                     <li>
+                        <span>SIZE </span>
+                        <span>1QT</span>
+                     </li>
+                     <li>
+                        <span>COLOR</span>
+                        <span>BLACK</span>
+                     </li>
+                  </ul>
+                  <img
+                     src="./assets/img/small-yellow-bottle.png"
+                     alt="bottle"
+                  />
+                  <p>861 S. Great Southwest Pkwy, Grand PrairieTX,75051</p>
+               </div>
+            </div>
+
+            <div class="code-scn-img">
+               <img src="./assets/img/code.png" alt="scn" />
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
